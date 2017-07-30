@@ -1,0 +1,374 @@
+Retrieving logs...
+============= i-08c4286b741e8352a ==============
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2017-07-24 22:46:48,959 CRIT Supervisor running as root (no user in config file)
+2017-07-24 22:46:48,975 INFO RPC interface 'supervisor' initialized
+2017-07-24 22:46:48,975 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2017-07-24 22:46:48,975 INFO supervisord started with pid 3024
+2017-07-24 22:46:49,977 INFO spawned: 'httpd' with pid 3093
+2017-07-24 22:46:51,155 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-07-24 22:46:52,710 INFO stopped: httpd (exit status 0)
+2017-07-24 22:46:53,714 INFO spawned: 'httpd' with pid 3207
+2017-07-24 22:46:54,739 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-07-24 22:47:30,122 INFO stopped: httpd (exit status 0)
+2017-07-24 22:47:31,126 INFO spawned: 'httpd' with pid 3541
+2017-07-24 22:47:32,152 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-07-24 22:52:59,092 INFO stopped: httpd (exit status 0)
+2017-07-24 22:53:00,097 INFO spawned: 'httpd' with pid 3896
+2017-07-24 22:53:01,145 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-07-24 22:56:26,590 INFO stopped: httpd (exit status 0)
+2017-07-24 22:56:27,594 INFO spawned: 'httpd' with pid 4225
+2017-07-24 22:56:28,640 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Mon Jul 24 22:47:31.168674 2017] [mpm_prefork:notice] [pid 3541] AH00163: Apache/2.4.25 (Amazon) mod_wsgi/3.5 Python/2.7.12 configured -- resuming normal operations
+[Mon Jul 24 22:47:31.168695 2017] [core:notice] [pid 3541] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Jul 24 22:47:33.757951 2017] [:error] [pid 3547] [client 127.0.0.1:40954] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Mon Jul 24 22:47:34.760137 2017] [:error] [pid 3549] [client 127.0.0.1:40956] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Mon Jul 24 22:47:35.762257 2017] [:error] [pid 3551] [client 127.0.0.1:40958] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Mon Jul 24 22:47:36.764327 2017] [:error] [pid 3548] [client 127.0.0.1:40960] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Mon Jul 24 22:52:59.080704 2017] [mpm_prefork:notice] [pid 3541] AH00169: caught SIGTERM, shutting down
+[Mon Jul 24 22:53:00.145711 2017] [suexec:notice] [pid 3896] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Jul 24 22:53:00.157308 2017] [so:warn] [pid 3896] AH01574: module wsgi_module is already loaded, skipping
+[Mon Jul 24 22:53:00.159492 2017] [auth_digest:notice] [pid 3896] AH01757: generating secret for digest authentication ...
+[Mon Jul 24 22:53:00.160126 2017] [lbmethod_heartbeat:notice] [pid 3896] AH02282: No slotmem from mod_heartmonitor
+[Mon Jul 24 22:53:00.160174 2017] [:warn] [pid 3896] mod_wsgi: Compiled for Python/2.7.10.
+[Mon Jul 24 22:53:00.160178 2017] [:warn] [pid 3896] mod_wsgi: Runtime using Python/2.7.12.
+[Mon Jul 24 22:53:00.162201 2017] [mpm_prefork:notice] [pid 3896] AH00163: Apache/2.4.25 (Amazon) mod_wsgi/3.5 Python/2.7.12 configured -- resuming normal operations
+[Mon Jul 24 22:53:00.162219 2017] [core:notice] [pid 3896] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Jul 24 22:53:02.752745 2017] [:error] [pid 3902] [client 127.0.0.1:41038] Target WSGI script not found or unable to stat: /opt/python/current/app/iptu/iptu
+[Mon Jul 24 22:53:03.754944 2017] [:error] [pid 3904] [client 127.0.0.1:41040] Target WSGI script not found or unable to stat: /opt/python/current/app/iptu/iptu
+[Mon Jul 24 22:53:04.757028 2017] [:error] [pid 3905] [client 127.0.0.1:41042] Target WSGI script not found or unable to stat: /opt/python/current/app/iptu/iptu
+[Mon Jul 24 22:53:05.759082 2017] [:error] [pid 3964] [client 127.0.0.1:41044] Target WSGI script not found or unable to stat: /opt/python/current/app/iptu/iptu
+[Mon Jul 24 22:56:26.578484 2017] [mpm_prefork:notice] [pid 3896] AH00169: caught SIGTERM, shutting down
+[Mon Jul 24 22:56:27.640032 2017] [suexec:notice] [pid 4225] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Jul 24 22:56:27.651591 2017] [so:warn] [pid 4225] AH01574: module wsgi_module is already loaded, skipping
+[Mon Jul 24 22:56:27.653638 2017] [auth_digest:notice] [pid 4225] AH01757: generating secret for digest authentication ...
+[Mon Jul 24 22:56:27.654275 2017] [lbmethod_heartbeat:notice] [pid 4225] AH02282: No slotmem from mod_heartmonitor
+[Mon Jul 24 22:56:27.654326 2017] [:warn] [pid 4225] mod_wsgi: Compiled for Python/2.7.10.
+[Mon Jul 24 22:56:27.654330 2017] [:warn] [pid 4225] mod_wsgi: Runtime using Python/2.7.12.
+[Mon Jul 24 22:56:27.656338 2017] [mpm_prefork:notice] [pid 4225] AH00163: Apache/2.4.25 (Amazon) mod_wsgi/3.5 Python/2.7.12 configured -- resuming normal operations
+[Mon Jul 24 22:56:27.656354 2017] [core:notice] [pid 4225] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Jul 24 22:56:30.253701 2017] [:error] [pid 4230] [remote 127.0.0.1:25157] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:56:30.253728 2017] [:error] [pid 4230] [remote 127.0.0.1:25157] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:56:30.254010 2017] [:error] [pid 4230] [remote 127.0.0.1:25157] Traceback (most recent call last):
+[Mon Jul 24 22:56:30.254028 2017] [:error] [pid 4230] [remote 127.0.0.1:25157]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:56:30.254073 2017] [:error] [pid 4230] [remote 127.0.0.1:25157]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:56:30.254088 2017] [:error] [pid 4230] [remote 127.0.0.1:25157] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:56:31.256669 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:56:31.256694 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:56:31.256719 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] Traceback (most recent call last):
+[Mon Jul 24 22:56:31.256738 2017] [:error] [pid 4230] [remote 127.0.0.1:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:56:31.256764 2017] [:error] [pid 4230] [remote 127.0.0.1:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:56:31.256779 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:56:32.259381 2017] [:error] [pid 4230] [remote 127.0.0.1:21061] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:56:32.259405 2017] [:error] [pid 4230] [remote 127.0.0.1:21061] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:56:32.259422 2017] [:error] [pid 4230] [remote 127.0.0.1:21061] Traceback (most recent call last):
+[Mon Jul 24 22:56:32.259438 2017] [:error] [pid 4230] [remote 127.0.0.1:21061]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:56:32.259463 2017] [:error] [pid 4230] [remote 127.0.0.1:21061]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:56:32.259480 2017] [:error] [pid 4230] [remote 127.0.0.1:21061] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:56:33.261989 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:56:33.262011 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:56:33.262027 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] Traceback (most recent call last):
+[Mon Jul 24 22:56:33.262043 2017] [:error] [pid 4230] [remote 127.0.0.1:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:56:33.262067 2017] [:error] [pid 4230] [remote 127.0.0.1:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:56:33.262082 2017] [:error] [pid 4230] [remote 127.0.0.1:25413] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:50.797750 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:50.797777 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:50.797798 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] Traceback (most recent call last):
+[Mon Jul 24 22:57:50.797819 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:50.797846 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:50.797862 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:51.307023 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:51.307046 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:51.307066 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] Traceback (most recent call last):
+[Mon Jul 24 22:57:51.307086 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:51.307123 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:51.307142 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:54.747897 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:54.747923 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:54.747942 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] Traceback (most recent call last):
+[Mon Jul 24 22:57:54.747962 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:54.747988 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:54.748005 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:55.083977 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:55.083999 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:55.084019 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] Traceback (most recent call last):
+[Mon Jul 24 22:57:55.084039 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:55.084065 2017] [:error] [pid 4230] [remote 172.31.29.69:25157]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:55.084082 2017] [:error] [pid 4230] [remote 172.31.29.69:25157] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:58.640788 2017] [:error] [pid 4230] [remote 172.31.29.69:21061] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:58.640810 2017] [:error] [pid 4230] [remote 172.31.29.69:21061] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:58.640829 2017] [:error] [pid 4230] [remote 172.31.29.69:21061] Traceback (most recent call last):
+[Mon Jul 24 22:57:58.640849 2017] [:error] [pid 4230] [remote 172.31.29.69:21061]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:58.640876 2017] [:error] [pid 4230] [remote 172.31.29.69:21061]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:58.640895 2017] [:error] [pid 4230] [remote 172.31.29.69:21061] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:57:58.962667 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:57:58.962687 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:57:58.962707 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] Traceback (most recent call last):
+[Mon Jul 24 22:57:58.962726 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:57:58.962753 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:57:58.962769 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:58:23.424691 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:58:23.424716 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:58:23.424743 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] Traceback (most recent call last):
+[Mon Jul 24 22:58:23.424763 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:58:23.424790 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:58:23.424806 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] ImportError: No module named django.core.wsgi
+[Mon Jul 24 22:58:23.978863 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Target WSGI script '/opt/python/current/app/iptu/wsgi.py' cannot be loaded as Python module.
+[Mon Jul 24 22:58:23.978884 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] mod_wsgi (pid=4230): Exception occurred processing WSGI script '/opt/python/current/app/iptu/wsgi.py'.
+[Mon Jul 24 22:58:23.978902 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] Traceback (most recent call last):
+[Mon Jul 24 22:58:23.978922 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]   File "/opt/python/current/app/iptu/wsgi.py", line 12, in <module>
+[Mon Jul 24 22:58:23.978946 2017] [:error] [pid 4230] [remote 172.31.29.69:25413]     from django.core.wsgi import get_wsgi_application
+[Mon Jul 24 22:58:23.978963 2017] [:error] [pid 4230] [remote 172.31.29.69:25413] ImportError: No module named django.core.wsgi
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+127.0.0.1 (-) - - [24/Jul/2017:22:46:56 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:46:57 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:46:58 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:46:59 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:47:33 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:47:34 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:47:35 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:47:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:53:02 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:53:03 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:53:04 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:53:05 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:56:30 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:56:31 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:56:32 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [24/Jul/2017:22:56:33 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:50 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:51 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://iptu-development.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:54 +0000] "GET /admin HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:55 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://iptu-development.us-east-1.elasticbeanstalk.com/admin" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:58 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:57:58 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://iptu-development.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:58:23 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+172.31.29.69 (189.48.255.173) - - [24/Jul/2017:22:58:23 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://iptu-development.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+  Generate container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2017-07-24T22:52:56.905Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage0/ConfigDeployPreHook] : Starting activity...
+[2017-07-24T22:52:56.905Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Starting activity...
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Completed activity. Result:
+  2017-07-24 22:52:58,579 ERROR    The specified WSGIPath of "iptu/iptu/wsgi.py" was not found in the source bundle
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage0/ConfigDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/pre.
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage0] : Completed activity. Result:
+  Configuration update - Command CMD-ConfigDeploy stage 0 completed
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1] : Starting activity...
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployEnactHook] : Starting activity...
+[2017-07-24T22:52:58.585Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Starting activity...
+[2017-07-24T22:53:06.854Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 3896, uptime 0:00:02
+  2017-07-24 22:53:06,760 INFO     Apache is running, but root page is not responding in 3 seconds.
+[2017-07-24T22:53:06.854Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/enact.
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployPostHook] : Starting activity...
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1/ConfigDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/post.
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/ConfigDeployStage1] : Completed activity. Result:
+  Application restart - Command CMD-ConfigDeploy stage 1 completed
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter] : Starting activity...
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2017-07-24T22:53:06.855Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2017-07-24T22:53:06.931Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2017-07-24T22:53:06.931Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2017-07-24T22:53:06.931Z] INFO  [3787]  - [Configuration update app-170724_193014@2/AddonsAfter] : Completed activity.
+[2017-07-24T22:53:06.931Z] INFO  [3787]  - [Configuration update app-170724_193014@2] : Completed activity. Result:
+  Configuration update - Command CMD-ConfigDeploy succeeded
+[2017-07-24T22:54:15.207Z] INFO  [4008]  - [CMD-TailLogs] : Starting activity...
+[2017-07-24T22:54:15.207Z] INFO  [4008]  - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2017-07-24T22:54:15.207Z] INFO  [4008]  - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2017-07-24T22:54:15.207Z] INFO  [4008]  - [CMD-TailLogs/TailLogs] : Starting activity...
+[2017-07-24T22:54:15.207Z] INFO  [4008]  - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+[2017-07-24T22:54:16.143Z] INFO  [4008]  - [CMD-TailLogs/TailLogs/TailLogs] : Completed activity.
+[2017-07-24T22:54:16.143Z] INFO  [4008]  - [CMD-TailLogs/TailLogs] : Completed activity. Result:
+  CMD-TailLogs - stage 0 - Command CMD-TailLogs stage 0 completed
+[2017-07-24T22:54:16.143Z] INFO  [4008]  - [CMD-TailLogs/AddonsAfter] : Starting activity...
+[2017-07-24T22:54:16.144Z] INFO  [4008]  - [CMD-TailLogs/AddonsAfter] : Completed activity.
+[2017-07-24T22:54:16.144Z] INFO  [4008]  - [CMD-TailLogs] : Completed activity. Result:
+  CMD-TailLogs - Command CMD-TailLogs succeeded
+[2017-07-24T22:56:24.262Z] INFO  [4083]  - [Configuration update app-170724_193014@3] : Starting activity...
+[2017-07-24T22:56:24.262Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore] : Starting activity...
+[2017-07-24T22:56:24.262Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore/ConfigCWLAgent] : Starting activity...
+[2017-07-24T22:56:24.262Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore/ConfigCWLAgent/10-config.sh] : Starting activity...
+[2017-07-24T22:56:24.377Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore/ConfigCWLAgent/10-config.sh] : Completed activity. Result:
+  Log streaming option setting is not specified, ignore cloudwatch logs setup.
+  
+  Disabled log streaming.
+[2017-07-24T22:56:24.377Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore/ConfigCWLAgent] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logstreaming/hooks/config.
+[2017-07-24T22:56:24.377Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsBefore] : Completed activity.
+[2017-07-24T22:56:24.377Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0] : Starting activity...
+[2017-07-24T22:56:24.378Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/InfraWriteConfig] : Starting activity...
+[2017-07-24T22:56:24.382Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/InfraWriteConfig] : Completed activity. Result:
+  Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+  Generate appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+  Generate container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2017-07-24T22:56:24.382Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/ConfigDeployPreHook] : Starting activity...
+[2017-07-24T22:56:24.382Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Starting activity...
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/ConfigDeployPreHook/01generate.py] : Completed activity.
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0/ConfigDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/pre.
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage0] : Completed activity. Result:
+  Configuration update - Command CMD-ConfigDeploy stage 0 completed
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1] : Starting activity...
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployEnactHook] : Starting activity...
+[2017-07-24T22:56:26.079Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Starting activity...
+[2017-07-24T22:56:34.361Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 4225, uptime 0:00:03
+  2017-07-24 22:56:34,263 INFO     Apache is running, but root page is not responding in 3 seconds.
+[2017-07-24T22:56:34.361Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/enact.
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployPostHook] : Starting activity...
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1/ConfigDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/configdeploy/post.
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/ConfigDeployStage1] : Completed activity. Result:
+  Application restart - Command CMD-ConfigDeploy stage 1 completed
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter] : Starting activity...
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2017-07-24T22:56:34.362Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2017-07-24T22:56:34.442Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2017-07-24T22:56:34.442Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2017-07-24T22:56:34.442Z] INFO  [4083]  - [Configuration update app-170724_193014@3/AddonsAfter] : Completed activity.
+[2017-07-24T22:56:34.442Z] INFO  [4083]  - [Configuration update app-170724_193014@3] : Completed activity. Result:
+  Configuration update - Command CMD-ConfigDeploy succeeded
+[2017-07-24T22:58:44.716Z] INFO  [4374]  - [CMD-TailLogs] : Starting activity...
+[2017-07-24T22:58:44.717Z] INFO  [4374]  - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2017-07-24T22:58:44.717Z] INFO  [4374]  - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2017-07-24T22:58:44.717Z] INFO  [4374]  - [CMD-TailLogs/TailLogs] : Starting activity...
+[2017-07-24T22:58:44.717Z] INFO  [4374]  - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2017-07-24T22:54:15.204Z] INFO  [4008]  : Command is applicable to this instance (i-08c4286b741e8352a)..
+[2017-07-24T22:54:15.204Z] DEBUG [4008]  : Checking if the received command stage is valid..
+[2017-07-24T22:54:15.204Z] INFO  [4008]  : No stage_num in command. Valid stage..
+[2017-07-24T22:54:15.204Z] INFO  [4008]  : Received command CMD-TailLogs: {"execution_data":"{\"aws_access_key_id\":\"ASIAJ6ZYQDBXQRR7KJPA\",\"signature\":\"ApS5Ng3P6OgjSJ2GSLb2IpN4UwQ=\",\"security_token\":\"FQoDYXdzEPj\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/wEaDKxWMIKefyprF3Rt\\\/iKpA9xEiz+YtcL2CxuqZH19wRZsD\\\/rT\\\/DHE\\\/sFCEL\\\/o0OpWQZAPrYfouas00tKLx6SwZN3yss6+IOfJEuX+qOMunoGt1VIVgPIxFFqVIk\\\/l\\\/T3r0YlNwAyQ8ap\\\/feuLaO4a47OdrGyfd4NtnIFAARyfV\\\/kF7FX3ZoWG+mfS9yAmRRtRmmnde+xz\\\/ig9P7E2tfLrRw5tET4j4VCP+Mk9xp3VfY5KmRynu4nGwwMoRbGeY8ruQDd7GFKi8UKM418b+8yBkjOLpqv6Ca8kbpUWlziGNbBawPiUZ4N+d4zV9IbmejafhyewV0TXl15ibJD1EGiuE1ObN3rSo+6stPbZ6KOqbl+NXF45ik6vAAOl5qn8UuMmtZo9DRWRyaCEhLhz8ZbgSdpTubGiev5tcKNo8QgsR5HxNpp3GSjdzj34OyNpy0Py18hd9\\\/heW55ciDSVCrPe9WAAjrzRq9Ny+VkAaFgA6p5oad2eXUtsCXU3AX6EuTyBbvDZWX4HVPX79svdctLD7oihw9VL+OtVb7wRJGuFL98F4jvk9wFdm089IVyUuNhZ10ZiVCk4AuzoKJrz2csF\",\"policy\":\"eyJleHBpcmF0aW9uIjoiMjAxNy0wNy0yNFQyMzoyNDoxMy4zNTNaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCIkeC1hbXotbWV0YS10aW1lX3N0YW1wIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLXB1Ymxpc2hfbWVjaGFuaXNtIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJyZXNvdXJjZXNcL2Vudmlyb25tZW50c1wvbG9nc1wvIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWJhdGNoX2lkIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWZpbGVfbmFtZSIsIiJdLFsic3RhcnRzLXdpdGgiLCIkeC1hbXotc2VjdXJpdHktdG9rZW4iLCIiXSxbInN0YXJ0cy13aXRoIiwiJENvbnRlbnQtVHlwZSIsIiJdLFsiZXEiLCIkYnVja2V0IiwiZWxhc3RpY2JlYW5zdGFsay11cy1lYXN0LTEtNzQzODc0ODg3MDY4Il0sWyJlcSIsIiRhY2wiLCJwcml2YXRlIl1dfQ==\"}","instance_ids":["i-08c4286b741e8352a"],"data":"02fe6750-70c3-11e7-bf47-7f13d94191e8","command_name":"CMD-TailLogs","api_version":"1.0","resource_name":"AWSEBAutoScalingGroup","request_id":"02fe6750-70c3-11e7-bf47-7f13d94191e8"}
+[2017-07-24T22:54:15.204Z] INFO  [4008]  : Command processor should execute command.
+[2017-07-24T22:54:15.204Z] DEBUG [4008]  : Storing current stage..
+[2017-07-24T22:54:15.204Z] DEBUG [4008]  : Stage_num does not exist. Not saving null stage. Returning..
+[2017-07-24T22:54:15.204Z] DEBUG [4008]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2017-07-24T22:54:15.204Z] DEBUG [4008]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2017-07-24T22:54:15.205Z] DEBUG [4008]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2017-07-24T22:54:15.205Z] INFO  [4008]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Updating Command definition of addon logpublish.
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Updating Command definition of addon logstreaming.
+[2017-07-24T22:54:15.207Z] DEBUG [4008]  : Loaded definition of Command CMD-TailLogs.
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Executing CMD-TailLogs
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Executing command: CMD-TailLogs...
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Executing command CMD-TailLogs activities...
+[2017-07-24T22:54:15.207Z] DEBUG [4008]  : Setting environment variables..
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Running AddonsBefore for command CMD-TailLogs...
+[2017-07-24T22:54:15.207Z] DEBUG [4008]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Running stage 0 of command CMD-TailLogs...
+[2017-07-24T22:54:15.207Z] DEBUG [4008]  : Loaded 1 actions for stage 0.
+[2017-07-24T22:54:15.207Z] INFO  [4008]  : Running 1 of 1 actions: TailLogs...
+[2017-07-24T22:54:16.143Z] INFO  [4008]  : Running AddonsAfter for command CMD-TailLogs...
+[2017-07-24T22:54:16.144Z] INFO  [4008]  : Command CMD-TailLogs succeeded!
+[2017-07-24T22:54:16.144Z] INFO  [4008]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"[Instance: i-08c4286b741e8352a] Successfully finished tailing 5 log(s)","severity":"INFO","timestamp":1500936856144}]}]}
+[2017-07-24T22:56:23.849Z] DEBUG [4083]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2017-07-24T22:56:23.849Z] DEBUG [4083]  : Checking if the command processor should execute...
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Checking whether the command is applicable to instance (i-08c4286b741e8352a)..
+[2017-07-24T22:56:23.851Z] INFO  [4083]  : Command is applicable to this instance (i-08c4286b741e8352a)..
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Checking if the received command stage is valid..
+[2017-07-24T22:56:23.851Z] INFO  [4083]  : No stage_num in command. Valid stage..
+[2017-07-24T22:56:23.851Z] INFO  [4083]  : Received command CMD-ConfigDeploy: {"instance_ids":["i-08c4286b741e8352a"],"command_name":"CMD-ConfigDeploy","api_version":"1.0","resource_name":"AWSEBAutoScalingGroup","request_id":"35c66ec7-70c3-11e7-bb34-475e421ac727"}
+[2017-07-24T22:56:23.851Z] INFO  [4083]  : Command processor should execute command.
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Storing current stage..
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Stage_num does not exist. Not saving null stage. Returning..
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2017-07-24T22:56:23.851Z] DEBUG [4083]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2017-07-24T22:56:23.852Z] INFO  [4083]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2017-07-24T22:56:23.853Z] INFO  [4083]  : Updating Command definition of addon logpublish.
+[2017-07-24T22:56:23.853Z] INFO  [4083]  : Updating Command definition of addon logstreaming.
+[2017-07-24T22:56:23.853Z] DEBUG [4083]  : Refreshing metadata...
+[2017-07-24T22:56:24.054Z] DEBUG [4083]  : Refreshed environment metadata.
+[2017-07-24T22:56:24.054Z] DEBUG [4083]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2017-07-24T22:56:24.055Z] DEBUG [4083]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2017-07-24T22:56:24.055Z] INFO  [4083]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2017-07-24T22:56:24.057Z] INFO  [4083]  : Updating Command definition of addon logpublish.
+[2017-07-24T22:56:24.057Z] INFO  [4083]  : Updating Command definition of addon logstreaming.
+[2017-07-24T22:56:24.057Z] DEBUG [4083]  : Retrieving metadata for key: AWS::CloudFormation::Init||Infra-WriteApplication2||files..
+[2017-07-24T22:56:24.057Z] DEBUG [4083]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||ManifestFileS3Key..
+[2017-07-24T22:56:24.152Z] INFO  [4083]  : Finding latest manifest from bucket 'elasticbeanstalk-us-east-1-743874887068' with prefix 'resources/environments/e-9vpgzit2ph/_runtime/versions/manifest_'.
+[2017-07-24T22:56:24.247Z] INFO  [4083]  : Found manifest with key 'resources/environments/e-9vpgzit2ph/_runtime/versions/manifest_1500936946305'.
+[2017-07-24T22:56:24.261Z] INFO  [4083]  : Updated manifest cache: deployment ID 3 and serial 3.
+[2017-07-24T22:56:24.261Z] DEBUG [4083]  : Loaded definition of Command CMD-ConfigDeploy.
+[2017-07-24T22:56:24.262Z] INFO  [4083]  : Executing Configuration update
+[2017-07-24T22:56:24.262Z] INFO  [4083]  : Executing command: CMD-ConfigDeploy...
+[2017-07-24T22:56:24.262Z] INFO  [4083]  : Executing command CMD-ConfigDeploy activities...
+[2017-07-24T22:56:24.262Z] DEBUG [4083]  : Setting environment variables..
+[2017-07-24T22:56:24.262Z] INFO  [4083]  : Running AddonsBefore for command CMD-ConfigDeploy...
+[2017-07-24T22:56:24.377Z] DEBUG [4083]  : Running stages of Command CMD-ConfigDeploy from stage 0 to stage 1...
+[2017-07-24T22:56:24.377Z] INFO  [4083]  : Running stage 0 of command CMD-ConfigDeploy...
+[2017-07-24T22:56:24.377Z] DEBUG [4083]  : Loaded 2 actions for stage 0.
+[2017-07-24T22:56:24.377Z] INFO  [4083]  : Running 1 of 2 actions: InfraWriteConfig...
+[2017-07-24T22:56:24.382Z] INFO  [4083]  : Running 2 of 2 actions: ConfigDeployPreHook...
+[2017-07-24T22:56:26.079Z] INFO  [4083]  : Running stage 1 of command CMD-ConfigDeploy...
+[2017-07-24T22:56:26.079Z] DEBUG [4083]  : Loaded 2 actions for stage 1.
+[2017-07-24T22:56:26.079Z] INFO  [4083]  : Running 1 of 2 actions: ConfigDeployEnactHook...
+[2017-07-24T22:56:34.361Z] INFO  [4083]  : Running 2 of 2 actions: ConfigDeployPostHook...
+[2017-07-24T22:56:34.362Z] INFO  [4083]  : Running AddonsAfter for command CMD-ConfigDeploy...
+[2017-07-24T22:56:34.442Z] INFO  [4083]  : Command CMD-ConfigDeploy succeeded!
+[2017-07-24T22:56:34.442Z] INFO  [4083]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2017-07-24T22:58:44.711Z] DEBUG [4374]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2017-07-24T22:58:44.712Z] DEBUG [4374]  : Checking if the command processor should execute...
+[2017-07-24T22:58:44.713Z] DEBUG [4374]  : Checking whether the command is applicable to instance (i-08c4286b741e8352a)..
+[2017-07-24T22:58:44.714Z] INFO  [4374]  : Command is applicable to this instance (i-08c4286b741e8352a)..
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Checking if the received command stage is valid..
+[2017-07-24T22:58:44.714Z] INFO  [4374]  : No stage_num in command. Valid stage..
+[2017-07-24T22:58:44.714Z] INFO  [4374]  : Received command CMD-TailLogs: {"execution_data":"{\"aws_access_key_id\":\"ASIAJKYB6MAOZCXFQIKQ\",\"signature\":\"CT7lPbsvCt09hAN05nqlrYW3Ie8=\",\"security_token\":\"FQoDYXdzEPj\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/\\\/wEaDKl\\\/91mh1Kysq0hsySKpA7ADK+EyofmF1uRjJFSmOEjs1SV1uABmuLVpZPzRqvutQiqLB0juM6DGJPraKT+dgMxOlkt+e+dk0spn9jXE5sV85diykZLj0DrgIbuZxg1o1R9gbj4duJV74iXIoUyK8jkQ1r7lnPi6\\\/0pRMsfMtA1Luo6U2T+4UVBdMDPxSjuko0Bm1dDGv6stUswiN4gDrLEFskO9mIWuruwuIZtXd\\\/\\\/\\\/jkQfpr+ozwKeF2akACVnZ5Q7VuVT9bTk6S0TAUojPFYH3Nb27rvPk0JURbw4L1Vyvkijp+AdoHaSiSHjWLi7wqhPcOSfCaWt5jag73k+zAOuEc6BpkCKXuTttBA0oXvsLjyzxaEe8VB8G1qtDwrTTvmMJgheQ2W+ePUQCcrahg\\\/+chzW\\\/zzd4biZ0ltVp7gjq+KzixXhMV+kKmydpuN4Qj0Fj06+EjlaQ1EBHaOUzr7V0e6NeXeZ99b9Va9FS8apnEBj0eQJdIuMXpFLTtRTdouxJfYaiwRoeZ1C0FPFK9AhIU78W6aM5+fNLs+3uPlODviT2ieORLXEHd837bQ3kNuzI2fgsi\\\/+KKL32csF\",\"policy\":\"eyJleHBpcmF0aW9uIjoiMjAxNy0wNy0yNFQyMzoyODo0Mi45MDRaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCIkeC1hbXotbWV0YS10aW1lX3N0YW1wIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLXB1Ymxpc2hfbWVjaGFuaXNtIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJyZXNvdXJjZXNcL2Vudmlyb25tZW50c1wvbG9nc1wvIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWJhdGNoX2lkIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWZpbGVfbmFtZSIsIiJdLFsic3RhcnRzLXdpdGgiLCIkeC1hbXotc2VjdXJpdHktdG9rZW4iLCIiXSxbInN0YXJ0cy13aXRoIiwiJENvbnRlbnQtVHlwZSIsIiJdLFsiZXEiLCIkYnVja2V0IiwiZWxhc3RpY2JlYW5zdGFsay11cy1lYXN0LTEtNzQzODc0ODg3MDY4Il0sWyJlcSIsIiRhY2wiLCJwcml2YXRlIl1dfQ==\"}","instance_ids":["i-08c4286b741e8352a"],"data":"a3d15d5b-70c3-11e7-b6c2-fb1eb0d86044","command_name":"CMD-TailLogs","api_version":"1.0","resource_name":"AWSEBAutoScalingGroup","request_id":"a3d15d5b-70c3-11e7-b6c2-fb1eb0d86044"}
+[2017-07-24T22:58:44.714Z] INFO  [4374]  : Command processor should execute command.
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Storing current stage..
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Stage_num does not exist. Not saving null stage. Returning..
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2017-07-24T22:58:44.714Z] DEBUG [4374]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2017-07-24T22:58:44.715Z] INFO  [4374]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2017-07-24T22:58:44.716Z] INFO  [4374]  : Updating Command definition of addon logpublish.
+[2017-07-24T22:58:44.716Z] INFO  [4374]  : Updating Command definition of addon logstreaming.
+[2017-07-24T22:58:44.716Z] DEBUG [4374]  : Loaded definition of Command CMD-TailLogs.
+[2017-07-24T22:58:44.716Z] INFO  [4374]  : Executing CMD-TailLogs
+[2017-07-24T22:58:44.716Z] INFO  [4374]  : Executing command: CMD-TailLogs...
+[2017-07-24T22:58:44.717Z] INFO  [4374]  : Executing command CMD-TailLogs activities...
+[2017-07-24T22:58:44.717Z] DEBUG [4374]  : Setting environment variables..
+[2017-07-24T22:58:44.717Z] INFO  [4374]  : Running AddonsBefore for command CMD-TailLogs...
+[2017-07-24T22:58:44.717Z] DEBUG [4374]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2017-07-24T22:58:44.717Z] INFO  [4374]  : Running stage 0 of command CMD-TailLogs...
+[2017-07-24T22:58:44.717Z] DEBUG [4374]  : Loaded 1 actions for stage 0.
+[2017-07-24T22:58:44.717Z] INFO  [4374]  : Running 1 of 1 actions: TailLogs...
+
+
+
