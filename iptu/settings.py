@@ -25,7 +25,7 @@ SECRET_KEY = '!=95flhw1r5%as4v0o7qj9--eq4ne08$&r(&32isd_o-7i$805'
 # SECURITY WARNING: don't run with debug turned on in production!
 if os.environ.get('ENVIRONMENT') == 'production':
     DEBUG = False
-    ALLOWED_HOSTS = ['iptu-development.us-east-1.elasticbeanstalk.com']
+    ALLOWED_HOSTS = ['iptu-development.us-east-1.elasticbeanstalk.com', 'api.ipturecife.com.br']
 else:
     DEBUG = True
     ALLOWED_HOSTS = []
