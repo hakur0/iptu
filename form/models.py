@@ -14,4 +14,7 @@ class Client(models.Model):
     optin = models.BooleanField(default=True, blank=False)
 
     def __unicode__(self):
-        return self.name
+        if self.neighbourhood:
+            return '{0}, que mora em {1} e paga {2} reais'.format(self.name, self.neighbourhood, self.iptu_price)
+        else:
+            return '{0}, que paga {1} reais'.format(self.name, self.iptu_price)
