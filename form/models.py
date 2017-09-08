@@ -6,12 +6,13 @@ from django.db import models
 
 class Client(models.Model):
     name = models.CharField(max_length=500, blank=False)
-    email = models.EmailField(max_length=200, blank=False)
-    phone_number = models.CharField(max_length=20, blank=False)
+    email = models.EmailField(max_length=200, blank=True, null=True)
+    phone_number = models.CharField(max_length=20, blank=True, null=True)
     cep = models.CharField(max_length=10, blank=False)
     iptu_price = models.DecimalField(max_digits=8, decimal_places=2)
     neighbourhood = models.CharField(max_length=200, blank=True)
-    optin = models.BooleanField(default=True, blank=False)
+    optin = models.BooleanField(default=True, blank=True)
+    email_phone = models.CharField(max_length=200, blank=False, null=True)
 
     def __unicode__(self):
         if self.neighbourhood:
